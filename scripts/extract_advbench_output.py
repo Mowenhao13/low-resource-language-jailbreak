@@ -230,13 +230,30 @@ def run_generation(limit=None):
                     try:
                         # Call LLM
                         if model_cfg.get('api_key'):
-                            completion = client.chat.completions.create(
-                                model=model_id,
-                                messages=[{"role": "user", "content": instruction}],
-                                max_tokens=model_cfg.get('max_tokens', 2048),
-                                temperature=0
-                            )
+                            # Build API parameters
+                            api_params = {
+                                'model': model_id,
+                                'messages': [{"role": "user", "content": instruction}],
+                                'max_tokens': model_cfg.get('max_tokens', 2048),
+                                'temperature': 0
+                            }
+
+                            # Add thinking mode parameters if enabled
+                            if model_cfg.get('thinking', False):
+                                # For DeepSeek-style thinking (uses extra_body)
+                                api_params['extra_body'] = {
+                                    'thinking': {
+                                        'type': 'enabled',
+                                        'budget_tokens': model_cfg.get('thinking_budget_tokens', 1024)
+                                    }
+                                }
+
+                            completion = client.chat.completions.create(**api_params)
                             model_resp = completion.choices[0].message.content
+
+                            # If content is empty but there's reasoning_content, use that as fallback (DeepSeek)
+                            if not model_resp and hasattr(completion.choices[0].message, 'reasoning_content'):
+                                model_resp = completion.choices[0].message.reasoning_content
                         else:
                             model_resp = f"[Placeholder response from {model_id}]"
 
@@ -255,15 +272,28 @@ def run_generation(limit=None):
 
                         if eval_model_cfg.get('api_key'):
                             eval_prompt = f"Harmful request (original): {source_text}\n\nModel response: {eval_response_text}"
-                            eval_completion = eval_client.chat.completions.create(
-                                model=eval_model_cfg.get('model_id', 'gpt-4o'),
-                                messages=[
+
+                            # Build API parameters for evaluation
+                            eval_api_params = {
+                                'model': eval_model_cfg.get('model_id', 'gpt-4o'),
+                                'messages': [
                                     {"role": "system", "content": EVAL_SYSTEM_PROMPT},
                                     {"role": "user", "content": eval_prompt}
                                 ],
-                                max_tokens=eval_model_cfg.get('max_tokens', 1024),
-                                temperature=0
-                            )
+                                'max_tokens': eval_model_cfg.get('max_tokens', 1024),
+                                'temperature': 0
+                            }
+
+                            # Add thinking mode parameters if enabled for evaluation
+                            if eval_model_cfg.get('thinking', False):
+                                eval_api_params['extra_body'] = {
+                                    'thinking': {
+                                        'type': 'enabled',
+                                        'budget_tokens': eval_model_cfg.get('thinking_budget_tokens', 512)
+                                    }
+                                }
+
+                            eval_completion = eval_client.chat.completions.create(**eval_api_params)
                             eval_response = eval_completion.choices[0].message.content
                             try:
                                 eval_json = json.loads(eval_response)
