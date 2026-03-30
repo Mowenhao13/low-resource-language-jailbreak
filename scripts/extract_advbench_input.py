@@ -54,7 +54,7 @@ with open(output_csv, 'w', encoding='utf-8', newline='') as csvfile:
                     print(f"进度: {processed_count}/{total_count} ({processed_count/total_count*100:.1f}%) - {target_lang_code}")
 
                 # 避免API频率限制（根据需要调整）
-                time.sleep(0.5)
+                time.sleep(1)
 
             except Exception as e:
                 print(f"翻译失败: 语言={target_lang_code}, 指令={source_text[:50]}...")

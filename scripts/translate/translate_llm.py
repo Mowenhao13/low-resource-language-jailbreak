@@ -1,10 +1,16 @@
-import requests
-from urllib.parse import quote
+from openai import OpenAI
 import time
 
-class Translator:
-    def __init__(self):
-        self.chunk_size = 3000  # Safe chunk size for URL length
+class LLMTranslator:
+    def __init__(self, model_id: str = "qwen3-instruct",
+                 base_url: str = "https://aigw.sysu.edu.cn/v1",
+                 api_key: str = "sk-PKikgGT1Mi4VJLeO9u0m27Z26UvReC5Gb89W3UENLd1Eg5mx"):
+        self.client = OpenAI(
+            base_url=base_url,
+            api_key=api_key,
+        )
+        self.model_id = model_id
+        self.chunk_size = 2000  # Safe chunk size for LLM context
 
     def Translate(self, source_text: str, source_lang: str, target_lang: str) -> str:
         if not source_text or len(source_text.strip()) == 0:
@@ -18,11 +24,12 @@ class Translator:
         chunks = self._split_text(source_text)
         translated_chunks = []
 
-        for chunk in chunks:
+        for i, chunk in enumerate(chunks):
             if chunk.strip():
                 translated = self._translate_chunk(chunk, source_lang, target_lang)
                 translated_chunks.append(translated)
-                time.sleep(0.1)  # Avoid rate limiting
+                if i < len(chunks) - 1:
+                    time.sleep(0.5)  # Avoid rate limiting
 
         return ''.join(translated_chunks)
 
@@ -54,33 +61,39 @@ class Translator:
         return chunks
 
     def _translate_chunk(self, source_text: str, source_lang: str, target_lang: str) -> str:
-        """Translate a single chunk of text."""
-        url = f'https://translate.googleapis.com/translate_a/single?client=gtx&dt=t&sl={source_lang}&tl={target_lang}&q={quote(source_text)}'
+        """Translate a single chunk of text using LLM."""
+        system_prompt = f"You are a professional translator. Translate the following text from {source_lang} to {target_lang}. Only output the translation, do not include any explanations or notes."
 
         try:
-            res = requests.get(url, timeout=30)
-            res.raise_for_status()  # Raise exception for HTTP errors
-            data = res.json()
-
-            # Extract and join translation fragments
-            if data and len(data) > 0 and data[0]:
-                text = ''.join([te[0] for te in data[0] if te and te[0]])
-                return text
-            return source_text
+            response = self.client.chat.completions.create(
+                model=self.model_id,
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": source_text}
+                ],
+                temperature=0.0,
+            )
+            return response.choices[0].message.content.strip()
 
         except Exception as e:
-            print(f"Translation warning: {e}")
-            print(f"Status code: {res.status_code if 'res' in locals() else 'N/A'}")
-            print(f"Response: {res.text[:200] if 'res' in locals() else 'N/A'}")
+            print(f"LLM Translation warning: {e}")
             # Return original text if translation fails
             return source_text
-    
+
+
 def main():
-    translator = Translator() 
-    source_text = "Hello world"
+    # Test the translator
+    translator = LLMTranslator()
+
+    # Simple test
+    source_text = "Hello world! This is a test of the LLM translator."
     source_lang = "en"
-    target_lang = "zh-CN"
-    print(translator.Translate(source_text, source_lang, target_lang))
+    target_lang = "zh"
+
+    print(f"Source: {source_text}")
+    result = translator.Translate(source_text, source_lang, target_lang)
+    print(f"Translation: {result}")
+
 
 if __name__ == "__main__":
     main()
