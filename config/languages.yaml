@@ -1,0 +1,212 @@
+# 语言特征标注项目 - 语言配置
+# 基于论文 "Low-Resource Languages Jailbreak GPT-4" 中的12种语言
+
+languages:
+  # 低资源语言 (LRL)
+  - code: zu
+    syntax_distance_weighted: 0.5918  # 加权Gower距离 (0-1)
+    syntax_distance_gower: 0.5786      # 标准Gower距离
+    syntax_common_features: 140        # 与英语共同的特征数
+    syntax_distance_source: "WALS"          # 特征来源
+    name: Zulu
+    name_chinese: 祖鲁语
+    family: Niger-Congo
+    family_chinese: 尼日尔-刚果语系
+    resource_level: LRL
+    iso6393: zul
+    notes: "班图语系，南非官方语言之一"
+    training_data_estimate: 0.0001  # 估计在训练数据中的占比（比例）
+    morph_type: Agglutinative
+    basic_word_order: SVO
+
+  - code: gd
+    syntax_distance_weighted: 0.4443  # 加权Gower距离 (0-1)
+    syntax_distance_gower: 0.4386      # 标准Gower距离
+    syntax_common_features: 57        # 与英语共同的特征数
+    syntax_distance_source: "WALS"          # 特征来源
+    name: Scots Gaelic
+    name_chinese: 苏格兰盖尔语
+    family: Indo-European
+    family_chinese: 印欧语系
+    resource_level: LRL
+    iso6393: gla
+    notes: "凯尔特语族，苏格兰高地语言"
+    training_data_estimate: 0.0001  # 估计在训练数据中的占比（比例）
+    morph_type: Fusional
+    basic_word_order: VSO
+
+  - code: hmn
+    syntax_distance_weighted: 0.4481  # 加权Gower距离 (0-1)
+    syntax_distance_gower: 0.4545      # 标准Gower距离
+    syntax_common_features: 121        # 与英语共同的特征数
+    syntax_distance_source: "WALS"          # 特征来源
+    name: Hmong
+    name_chinese: 苗语
+    family: Hmong-Mien
+    family_chinese: 苗瑶语系
+    resource_level: LRL
+    iso6393: hmn
+    notes: "苗瑶语系，主要分布在中国西南和东南亚"
+    training_data_estimate: 0.0001  # 估计在训练数据中的占比（比例）
+    morph_type: Isolating
+    basic_word_order: SVO
+
+  - code: gn
+    syntax_distance_weighted: 0.6240  # 加权Gower距离 (0-1)
+    syntax_distance_gower: 0.6296      # 标准Gower距离
+    syntax_common_features: 135        # 与英语共同的特征数
+    syntax_distance_source: "WALS"          # 特征来源
+    name: Guarani
+    name_chinese: 瓜拉尼语
+    family: Tupian
+    family_chinese: 图皮语系
+    resource_level: LRL
+    iso6393: grn
+    notes: "图皮-瓜拉尼语系，巴拉圭官方语言"
+    training_data_estimate: 0.0001  # 估计在训练数据中的占比（比例）
+    morph_type: Agglutinative
+    basic_word_order: SVO
+
+  # 中资源语言 (MRL)
+  - code: uk
+    syntax_distance_weighted: 0.2377  # 加权Gower距离 (0-1)
+    syntax_distance_gower: 0.2500      # 标准Gower距离
+    syntax_common_features: 56        # 与英语共同的特征数
+    syntax_distance_source: "WALS"          # 特征来源
+    name: Ukrainian
+    name_chinese: 乌克兰语
+    family: Indo-European
+    family_chinese: 印欧语系
+    resource_level: MRL
+    iso6393: ukr
+    notes: "斯拉夫语族，乌克兰官方语言"
+    training_data_estimate: 0.001  # 估计在训练数据中的占比（比例）
+    morph_type: Fusional
+    basic_word_order: SVO
+
+  - code: bn
+    syntax_distance_weighted: 0.5982  # 加权Gower距离 (0-1)
+    syntax_distance_gower: 0.5833      # 标准Gower距离
+    syntax_common_features: 48        # 与英语共同的特征数
+    syntax_distance_source: "WALS"          # 特征来源
+    name: Bengali
+    name_chinese: 孟加拉语
+    family: Indo-European
+    family_chinese: 印欧语系
+    resource_level: MRL
+    iso6393: ben
+    notes: "印度-雅利安语支，孟加拉国和印度西孟加拉邦官方语言"
+    training_data_estimate: 0.001  # 估计在训练数据中的占比（比例）
+    morph_type: Fusional
+    basic_word_order: SOV 
+
+  - code: th
+    syntax_distance_weighted: 0.4767  # 加权Gower距离 (0-1)
+    syntax_distance_gower: 0.4820      # 标准Gower距离
+    syntax_common_features: 139        # 与英语共同的特征数
+    syntax_distance_source: "WALS"          # 特征来源
+    name: Thai
+    name_chinese: 泰语
+    family: Kra-Dai
+    family_chinese: 壮侗语系
+    resource_level: MRL
+    iso6393: tha
+    notes: "泰语支，泰国官方语言"
+    training_data_estimate: 0.001  # 估计在训练数据中的占比（比例）
+    morph_type: Isolating
+    basic_word_order: SVO 
+
+  - code: he
+    syntax_distance_weighted: 0.3964  # 加权Gower距离 (0-1)
+    syntax_distance_gower: 0.3901      # 标准Gower距离
+    syntax_common_features: 141        # 与英语共同的特征数
+    syntax_distance_source: "WALS"          # 特征来源
+    name: Hebrew
+    name_chinese: 希伯来语
+    family: Afro-Asiatic
+    family_chinese: 亚非语系
+    resource_level: MRL
+    iso6393: heb
+    notes: "闪米特语族，以色列官方语言"
+    training_data_estimate: 0.001  # 估计在训练数据中的占比（比例）
+    morph_type: Fusional
+    basic_word_order: SVO 
+
+  # 高资源语言 (HRL)
+  - code: zh-CN
+    syntax_distance_weighted: 0.4588  # 加权Gower距离 (0-1)
+    syntax_distance_gower: 0.4671      # 标准Gower距离
+    syntax_common_features: 152        # 与英语共同的特征数
+    syntax_distance_source: "WALS"          # 特征来源
+    name: Simplified Mandarin Chinese
+    name_chinese: 简体中文
+    family: Sino-Tibetan
+    family_chinese: 汉藏语系
+    resource_level: HRL
+    iso6393: cmn
+    notes: "汉语族，中国官方语言"
+    training_data_estimate: 0.01  # 估计在训练数据中的占比（比例）
+    morph_type: Isolating
+    basic_word_order: SVO 
+
+  - code: ar
+    syntax_distance_weighted: 0.4899  # 加权Gower距离 (0-1)
+    syntax_distance_gower: 0.5000      # 标准Gower距离
+    syntax_common_features: 26        # 与英语共同的特征数
+    syntax_distance_source: "WALS"          # 特征来源
+    name: Modern Standard Arabic
+    name_chinese: 现代标准阿拉伯语
+    family: Afro-Asiatic
+    family_chinese: 亚非语系
+    resource_level: HRL
+    iso6393: arb
+    notes: "闪米特语族，阿拉伯世界标准语"
+    training_data_estimate: 0.008  # 估计在训练数据中的占比（比例）
+    morph_type: Fusional
+    basic_word_order: VSO 
+
+  - code: it
+    syntax_distance_weighted: 0.2554  # 加权Gower距离 (0-1)
+    syntax_distance_gower: 0.2593      # 标准Gower距离
+    syntax_common_features: 81        # 与英语共同的特征数
+    syntax_distance_source: "WALS"          # 特征来源
+    name: Italian
+    name_chinese: 意大利语
+    family: Indo-European
+    family_chinese: 印欧语系
+    resource_level: HRL
+    iso6393: ita
+    notes: "罗曼语族，意大利官方语言"
+    training_data_estimate: 0.005  # 估计在训练数据中的占比（比例）
+    morph_type: Fusional
+    basic_word_order: SVO 
+
+  - code: hi
+    syntax_distance_weighted: 0.4191  # 加权Gower距离 (0-1)
+    syntax_distance_gower: 0.4130      # 标准Gower距离
+    syntax_common_features: 138        # 与英语共同的特征数
+    syntax_distance_source: "WALS"          # 特征来源
+    name: Hindi
+    name_chinese: 印地语
+    family: Indo-European
+    family_chinese: 印欧语系
+    resource_level: HRL
+    iso6393: hin
+    notes: "印度-雅利安语支，印度官方语言之一"
+    training_data_estimate: 0.006  # 估计在训练数据中的占比（比例）
+    morph_type: Fusional
+    basic_word_order: SOV 
+
+# 基准语言（用于距离计算）
+reference_languages:
+  - code: en
+    name: English
+    name_chinese: 英语
+    family: Indo-European
+    family_chinese: 印欧语系
+    resource_level: HRL
+    iso6393: eng
+    notes: "日耳曼语族，国际通用语"
+    training_data_estimate: 0.1  # 估计在训练数据中的占比（比例）
+    morph_type: Fusional
+    basic_word_order: SVO 

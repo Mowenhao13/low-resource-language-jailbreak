@@ -1,0 +1,208 @@
+# 语法距离计算 - 特征选择
+# 选自WALS (World Atlas of Language Structures) 的20个核心语法特征
+
+selected_features:
+  # 1. 形态特征
+  - feature: "26A"
+    description: "Fusion of Selected Inflectional Formatives"
+    description_chinese: "选定屈折形式的融合度"
+    categories:
+      - "1: isolating (little or no fusion)"
+      - "2: weak fusion"
+      - "3: moderate fusion"
+      - "4: strong fusion"
+
+  # 2. 名词类别
+  - feature: "30A"
+    description: "Number of Genders"
+    description_chinese: "性别/类别数量"
+    categories:
+      - "1: none"
+      - "2: two"
+      - "3: three"
+      - "4: four or more"
+
+  - feature: "33A"
+    description: "Coding of Nominal Plurality"
+    description_chinese: "名词复数编码方式"
+    categories:
+      - "1: plural prefix"
+      - "2: plural suffix"
+      - "3: plural stem change"
+      - "4: plural word"
+
+  # 3. 格标记
+  - feature: "49A"
+    description: "Number of Cases"
+    description_chinese: "格的数量"
+    categories:
+      - "1: no morphological case marking"
+      - "2: 2 cases"
+      - "3: 3-5 cases"
+      - "4: 6-9 cases"
+      - "5: 10 or more cases"
+
+  # 4. 词序特征
+  - feature: "81A"
+    description: "Order of Subject, Object and Verb"
+    description_chinese: "主语、宾语、动词的顺序"
+    categories:
+      - "1: SOV"
+      - "2: SVO"
+      - "3: VSO"
+      - "4: VOS"
+      - "5: OVS"
+      - "6: OSV"
+      - "7: no dominant order"
+
+  - feature: "85A"
+    description: "Order of Adposition and Noun Phrase"
+    description_chinese: "介词/后置词与名词短语的顺序"
+    categories:
+      - "1: prepositions"
+      - "2: postpositions"
+      - "3: inpositions"
+      - "4: no adpositions"
+
+  - feature: "87A"
+    description: "Order of Adjective and Noun"
+    description_chinese: "形容词与名词的顺序"
+    categories:
+      - "1: adjective-noun"
+      - "2: noun-adjective"
+      - "3: both orders with no dominant order"
+      - "4: no adjectives as a distinct class"
+
+  # 5. 时态-体-语气
+  - feature: "69A"
+    description: "Past Tense"
+    description_chinese: "过去时"
+    categories:
+      - "1: past tense not marked morphologically"
+      - "2: past tense marked morphologically"
+
+  - feature: "70A"
+    description: "Future Tense"
+    description_chinese: "将来时"
+    categories:
+      - "1: future tense not marked morphologically"
+      - "2: future tense marked morphologically"
+
+  - feature: "73A"
+    description: "Imperative-hortative Systems"
+    description_chinese: "祈使-劝告系统"
+    categories:
+      - "1: neither imperatives nor hortatives marked"
+      - "2: only imperatives marked"
+      - "3: only hortatives marked"
+      - "4: both imperatives and hortatives marked"
+
+  # 6. 否定
+  - feature: "143A"
+    description: "Order of Negative Morpheme and Verb"
+    description_chinese: "否定语素与动词的顺序"
+    categories:
+      - "1: negative prefix"
+      - "2: negative suffix"
+      - "3: negative particle before verb"
+      - "4: negative particle after verb"
+
+  # 7. 疑问
+  - feature: "93A"
+    description: "Position of Interrogative Phrases in Content Questions"
+    description_chinese: "内容疑问句中疑问短语的位置"
+    categories:
+      - "1: initial"
+      - "2: not initial"
+
+  # 8. 关系从句
+  - feature: "90A"
+    description: "Order of Relative Clause and Noun"
+    description_chinese: "关系从句与名词的顺序"
+    categories:
+      - "1: noun-relativizer"
+      - "2: relativizer-noun"
+      - "3: correlative"
+      - "4: internally headed"
+      - "5: adjoined"
+
+  # 9. 比较结构
+  - feature: "121A"
+    description: "Comparative Constructions"
+    description_chinese: "比较结构"
+    categories:
+      - "1: particle comparative"
+      - "2: locational comparative"
+      - "3: conjoined comparative"
+      - "4: exceed comparative"
+
+  # 10. 被动语态
+  - feature: "107A"
+    description: "Passive Constructions"
+    description_chinese: "被动结构"
+    categories:
+      - "1: no passive construction"
+      - "2: passive construction"
+
+  # 11. 使役结构
+  - feature: "110A"
+    description: "Causative Constructions"
+    description_chinese: "使役结构"
+    categories:
+      - "1: morphological causative"
+      - "2: periphrastic causative"
+      - "3: both morphological and periphrastic"
+
+  # 12. 应用结构
+  - feature: "111A"
+    description: "Applicative Constructions"
+    description_chinese: "应用结构"
+    categories:
+      - "1: no applicative construction"
+      - "2: applicative construction"
+
+  # 13. 领属结构
+  - feature: "57A"
+    description: "Position of Pronominal Possessive Affixes"
+    description_chinese: "代词性领属词缀的位置"
+    categories:
+      - "1: possessive prefixes"
+      - "2: possessive suffixes"
+      - "3: possessive prefixes and suffixes"
+
+  # 14. 冠词
+  - feature: "37A"
+    description: "Definite Articles"
+    description_chinese: "定冠词"
+    categories:
+      - "1: no definite or indefinite article"
+      - "2: definite word distinct from demonstrative"
+      - "3: definite affix"
+
+  # 15. 代词系统
+  - feature: "44A"
+    description: "Gender Distinctions in Independent Personal Pronouns"
+    description_chinese: "独立人称代词的性别区分"
+    categories:
+      - "1: no gender distinctions"
+      - "2: gender distinctions in 3rd person singular"
+      - "3: gender distinctions in 3rd person singular and plural"
+
+# 特征权重（可选，用于加权距离计算）
+feature_weights:
+  "26A": 1.0  # 形态融合度
+  "81A": 1.2  # 基本词序（重要）
+  "85A": 1.0  # 介词位置
+  "87A": 0.8  # 形容词位置
+  "69A": 0.7  # 过去时
+  "70A": 0.7  # 将来时
+  "49A": 0.9  # 格系统
+  "30A": 0.6  # 性别系统
+  "143A": 0.8  # 否定
+  "93A": 0.7  # 疑问
+
+# 距离计算方法配置
+distance_config:
+  method: "jaccard"  # jaccard, hamming, composite
+  normalize: true
+  missing_value: 0    # 缺失特征的处理（0=视为无此特征）

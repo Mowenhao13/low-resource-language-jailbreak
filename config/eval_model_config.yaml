@@ -1,0 +1,10 @@
+# Evaluation model configuration
+model:
+  # model_id: deepseek-chat
+  # base_url: https://api.deepseek.com/v1
+  # api_key: sk-242daaa298a04b29bd4224b21ebbbe71
+  # max_tokens: 2048
+  model_id: qwen3-instruct 
+  base_url: https://aigw.sysu.edu.cn/v1 
+  api_key: sk-PKikgGT1Mi4VJLeO9u0m27Z26UvReC5Gb89W3UENLd1Eg5mx
+  max_tokens: 2048 
