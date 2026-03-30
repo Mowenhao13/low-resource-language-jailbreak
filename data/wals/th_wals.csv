@@ -1,0 +1,140 @@
+Fid,Value,Feature
+1A,3,Consonant Inventories
+2A,3,Vowel Quality Inventories
+3A,2,Consonant-Vowel Ratio
+4A,2,Voicing in Plosives and Fricatives
+5A,4,Voicing and Gaps in Plosive Systems
+6A,1,Uvular Consonants
+7A,1,Glottalized Consonants
+8A,2,Lateral Consonants
+9A,1,The Velar Nasal
+10A,2,Vowel Nasalization
+11A,1,Front Rounded Vowels
+12A,2,Syllable Structure
+13A,3,Tone
+18A,1,Absence of Common Consonants
+19A,1,Presence of Uncommon Consonants
+20A,7,Fusion of Selected Inflectional Formatives
+21A,5,Exponence of Selected Inflectional Formatives
+21B,1,Exponence of Tense-Aspect-Mood Inflection
+22A,2,Inflectional Synthesis of the Verb
+23A,4,Locus of Marking in the Clause
+24A,2,Locus of Marking in Possessive Noun Phrases
+25A,5,Locus of Marking: Whole-language Typology
+25B,1,Zero Marking of A and P Arguments
+26A,1,Prefixing vs. Suffixing in Inflectional Morphology
+27A,1,Reduplication
+28A,1,Case Syncretism
+29A,1,Syncretism in Verbal Person/Number Marking
+30A,1,Number of Genders
+31A,1,Sex-based and Non-sex-based Gender Systems
+32A,1,Systems of Gender Assignment
+35A,4,Plurality in Independent Personal Pronouns
+36A,4,The Associative Plural
+37A,4,Definite Articles
+38A,1,Indefinite Articles
+39A,2,Inclusive/Exclusive Distinction in Independent Pronouns
+40A,1,Inclusive/Exclusive Distinction in Verbal Inflection
+43A,1,Third Person Pronouns and Demonstratives
+44A,6,Gender Distinctions in Independent Personal Pronouns
+45A,4,Politeness Distinctions in Pronouns
+46A,1,Indefinite Pronouns
+47A,1,Intensifiers and Reflexive Pronouns
+48A,2,Person Marking on Adpositions
+49A,1,Number of Cases
+50A,1,Asymmetrical Case-Marking
+51A,9,Position of Case Affixes
+52A,2,Comitatives and Instrumentals
+53A,5,Ordinal Numerals
+54A,1,Distributive Numerals
+55A,3,Numeral Classifiers
+56A,3,Conjunctions and Universal Quantifiers
+57A,4,Position of Pronominal Possessive Affixes
+58A,2,Obligatory Possessive Inflection
+58B,1,Number of Possessive Nouns
+59A,1,Possessive Classification
+60A,5,"Genitives, Adjectives and Relative Clauses"
+61A,2,Adjectives without Nouns
+62A,6,Action Nominal Constructions
+63A,1,Noun Phrase Conjunction
+64A,1,Nominal and Verbal Conjunction
+65A,2,Perfective/Imperfective Aspect
+66A,4,The Past Tense
+67A,2,The Future Tense
+68A,2,The Perfect
+69A,5,Position of Tense-Aspect Affixes
+70A,5,The Morphological Imperative
+71A,2,The Prohibitive
+72A,4,Imperative-Hortative Systems
+73A,2,The Optative
+74A,2,Situational Possibility
+75A,1,Epistemic Possibility
+76A,1,Overlap between Situational and Epistemic Modal Marking
+77A,1,Semantic Distinctions of Evidentiality
+78A,1,Coding of Evidentiality
+79A,4,Suppletion According to Tense and Aspect
+79B,5,Suppletion in Imperatives and Hortatives
+80A,1,Verbal Number and Suppletion
+81A,2,"Order of Subject, Object and Verb"
+82A,1,Order of Subject and Verb
+83A,2,Order of Object and Verb
+84A,1,"Order of Object, Oblique, and Verb"
+85A,2,Order of Adposition and Noun Phrase
+86A,2,Order of Genitive and Noun
+87A,2,Order of Adjective and Noun
+88A,2,Order of Demonstrative and Noun
+89A,2,Order of Numeral and Noun
+90A,1,Order of Relative Clause and Noun
+90C,1,Postnominal relative clauses
+91A,2,Order of Degree Word and Adjective
+92A,2,Position of Polar Question Particles
+93A,2,Position of Interrogative Phrases in Content Questions
+94A,1,Order of Adverbial Subordinator and Clause
+95A,4,Relationship between the Order of Object and Verb and the Order of Adposition and Noun Phrase
+96A,4,Relationship between the Order of Object and Verb and the Order of Relative Clause and Noun
+97A,4,Relationship between the Order of Object and Verb and the Order of Adjective and Noun
+98A,1,Alignment of Case Marking of Full Noun Phrases
+99A,1,Alignment of Case Marking of Pronouns
+100A,1,Alignment of Verbal Person Marking
+101A,5,Expression of Pronominal Subjects
+102A,1,Verbal Person Marking
+103A,1,Third Person Zero of Verbal Person Marking
+104A,1,Order of Person Markers on the Verb
+105A,1,Ditransitive Constructions: The Verb 'Give'
+106A,2,Reciprocal Constructions
+107A,1,Passive Constructions
+108A,3,Antipassive Constructions
+108B,4,Productivity of the Antipassive Construction
+109A,8,Applicative Constructions
+109B,5,Other Roles of Applied Objects
+110A,3,Periphrastic Causative Constructions
+111A,1,Nonperiphrastic Causative Constructions
+112A,3,Negative Morphemes
+113A,1,Symmetric and Asymmetric Standard Negation
+114A,7,Subtypes of Asymmetric Standard Negation
+115A,1,Negative Indefinite Pronouns and Predicate Negation
+116A,1,Polar Questions
+117A,3,Predicative Possession
+118A,1,Predicative Adjectives
+119A,1,Nominal and Locational Predication
+120A,2,Zero Copula for Predicate Nominals
+121A,2,Comparative Constructions
+122A,4,Relativization on Subjects
+123A,4,Relativization on Obliques
+124A,1,'Want' Complement Subjects
+129A,2,Hand and Arm
+130A,2,Finger and Hand
+131A,1,Numeral Bases
+138A,1,Tea
+142A,2,Para-Linguistic Usages of Clicks
+143A,1,Order of Negative Morpheme and Verb
+143E,1,Preverbal Negative Morphemes
+143F,4,Postverbal Negative Morphemes
+143G,4,Minor morphological means of signaling negation
+144A,2,"Position of Negative Word With Respect to Subject, Object, and Verb"
+144B,3,Position of negative words relative to beginning and end of clause and with respect to adjacency to verb
+144D,2,The Position of Negative Morphemes in SVO Languages
+144H,4,NegSVO Order
+144I,1,SNegVO Order
+144J,7,SVNegO Order
+144K,4,SVONeg Order

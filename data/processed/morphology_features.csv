@@ -1,0 +1,13 @@
+language_code,grambank_id,grambank_name,found_in_grambank,morph_type,morph_complexity_score,morph_confidence,morph_feature_count,source
+zu,zulu1248,Zulu,True,agglutinative,0.95,0.8,16.0,GramBank
+gd,,,False,unknown,,0.0,,GramBank
+hmn,,,False,unknown,,0.0,,GramBank
+gn,,,False,unknown,,0.0,,GramBank
+uk,ukra1253,Ukrainian,True,fusional,1.95,0.9,41.0,GramBank
+bn,,,False,unknown,,0.0,,GramBank
+th,thai1261,Thai,True,isolating,0.0,0.9,42.0,GramBank
+he,hebr1245,Modern Hebrew,True,agglutinative,1.4,0.8,42.0,GramBank
+zh-CN,mand1415,Mandarin Chinese,True,isolating,0.05,0.9,42.0,GramBank
+ar,stan1318,Standard Arabic,True,fusional,2.0,0.9,40.0,GramBank
+it,ital1282,Italian,True,fusional,1.95,0.9,42.0,GramBank
+hi,hind1269,Hindi,True,fusional,1.8,0.9,40.0,GramBank

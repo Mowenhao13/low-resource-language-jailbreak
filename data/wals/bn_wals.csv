@@ -1,0 +1,54 @@
+Fid,Value,Feature
+1A,4,Consonant Inventories
+2A,3,Vowel Quality Inventories
+3A,3,Consonant-Vowel Ratio
+4A,2,Voicing in Plosives and Fricatives
+5A,2,Voicing and Gaps in Plosive Systems
+6A,1,Uvular Consonants
+7A,1,Glottalized Consonants
+8A,2,Lateral Consonants
+11A,1,Front Rounded Vowels
+12A,3,Syllable Structure
+13A,1,Tone
+14A,2,Fixed Stress Locations
+15A,8,Weight-Sensitive Stress
+16A,1,Weight Factors in Weight-Sensitive Stress Systems
+17A,5,Rhythm Types
+18A,1,Absence of Common Consonants
+19A,1,Presence of Uncommon Consonants
+36A,2,The Associative Plural
+47A,1,Intensifiers and Reflexive Pronouns
+51A,1,Position of Case Affixes
+53A,6,Ordinal Numerals
+54A,2,Distributive Numerals
+55A,3,Numeral Classifiers
+65A,2,Perfective/Imperfective Aspect
+66A,1,The Past Tense
+67A,1,The Future Tense
+68A,3,The Perfect
+79A,3,Suppletion According to Tense and Aspect
+79B,5,Suppletion in Imperatives and Hortatives
+80A,1,Verbal Number and Suppletion
+81A,1,"Order of Subject, Object and Verb"
+82A,1,Order of Subject and Verb
+83A,1,Order of Object and Verb
+84A,3,"Order of Object, Oblique, and Verb"
+112A,2,Negative Morphemes
+117A,2,Predicative Possession
+118A,2,Predicative Adjectives
+119A,2,Nominal and Locational Predication
+120A,2,Zero Copula for Predicate Nominals
+124A,1,'Want' Complement Subjects
+138A,1,Tea
+142A,1,Para-Linguistic Usages of Clicks
+143A,2,Order of Negative Morpheme and Verb
+143E,4,Preverbal Negative Morphemes
+143F,1,Postverbal Negative Morphemes
+143G,4,Minor morphological means of signaling negation
+144A,8,"Position of Negative Word With Respect to Subject, Object, and Verb"
+144B,4,Position of negative words relative to beginning and end of clause and with respect to adjacency to verb
+144L,4,The Position of Negative Morphemes in SOV Languages
+144P,4,NegSOV Order
+144Q,4,SNegOV Order
+144R,8,SONegV Order
+144S,1,SOVNeg Order

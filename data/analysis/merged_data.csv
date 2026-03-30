@@ -1,0 +1,13 @@
+lang_code,lang_name,lang_name_chinese,syntax_distance_weighted,syntax_distance_gower,syntax_common_features,training_data_estimate,morph_type,basic_word_order,resource_level,family,asr,success,total,hamming_distance,gower_distance
+zu,Zulu,祖鲁语,0.5918,0.5786,140,0.0001,Agglutinative,SVO,LRL,Niger-Congo,0.0,0,1,81,0.5785714285714285
+gd,Scots Gaelic,苏格兰盖尔语,0.4443,0.4386,57,0.0001,Fusional,VSO,LRL,Indo-European,0.0,0,1,25,0.4385964912280702
+hmn,Hmong,苗语,0.4481,0.4545,121,0.0001,Isolating,SVO,LRL,Hmong-Mien,0.0,0,1,55,0.4545454545454546
+gn,Guarani,瓜拉尼语,0.624,0.6296,135,0.0001,Agglutinative,SVO,LRL,Tupian,0.0,0,1,85,0.6296296296296297
+uk,Ukrainian,乌克兰语,0.2377,0.25,56,0.001,Fusional,SVO,MRL,Indo-European,0.0,0,1,14,0.25
+bn,Bengali,孟加拉语,0.5982,0.5833,48,0.001,Fusional,SOV,MRL,Indo-European,0.0,0,1,28,0.5833333333333333
+th,Thai,泰语,0.4767,0.482,139,0.001,Isolating,SVO,MRL,Kra-Dai,0.0,0,1,67,0.4820143884892086
+he,Hebrew,希伯来语,0.3964,0.3901,141,0.001,Fusional,SVO,MRL,Afro-Asiatic,0.0,0,1,55,0.3900709219858156
+zh-CN,Simplified Mandarin Chinese,简体中文,0.4588,0.4671,152,0.01,Isolating,SVO,HRL,Sino-Tibetan,0.0,0,1,71,0.4671052631578947
+ar,Modern Standard Arabic,现代标准阿拉伯语,0.4899,0.5,26,0.008,Fusional,VSO,HRL,Afro-Asiatic,0.0,0,1,13,0.5
+it,Italian,意大利语,0.2554,0.2593,81,0.005,Fusional,SVO,HRL,Indo-European,0.0,0,0,21,0.2592592592592593
+hi,Hindi,印地语,0.4191,0.413,138,0.006,Fusional,SOV,HRL,Indo-European,0.0,0,0,57,0.4130434782608695

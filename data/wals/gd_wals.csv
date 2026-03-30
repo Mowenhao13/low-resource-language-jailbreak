@@ -1,0 +1,62 @@
+Fid,Value,Feature
+14A,2,Fixed Stress Locations
+15A,8,Weight-Sensitive Stress
+16A,1,Weight Factors in Weight-Sensitive Stress Systems
+17A,4,Rhythm Types
+26A,3,Prefixing vs. Suffixing in Inflectional Morphology
+27A,3,Reduplication
+30A,2,Number of Genders
+31A,2,Sex-based and Non-sex-based Gender Systems
+32A,3,Systems of Gender Assignment
+33A,6,Coding of Nominal Plurality
+37A,1,Definite Articles
+38A,4,Indefinite Articles
+45A,2,Politeness Distinctions in Pronouns
+51A,5,Position of Case Affixes
+53A,6,Ordinal Numerals
+63A,1,Noun Phrase Conjunction
+69A,4,Position of Tense-Aspect Affixes
+81A,3,"Order of Subject, Object and Verb"
+82A,2,Order of Subject and Verb
+83A,2,Order of Object and Verb
+84A,1,"Order of Object, Oblique, and Verb"
+85A,2,Order of Adposition and Noun Phrase
+86A,2,Order of Genitive and Noun
+87A,2,Order of Adjective and Noun
+88A,2,Order of Demonstrative and Noun
+89A,1,Order of Numeral and Noun
+90A,1,Order of Relative Clause and Noun
+90C,1,Postnominal relative clauses
+91A,1,Order of Degree Word and Adjective
+92A,6,Position of Polar Question Particles
+93A,1,Position of Interrogative Phrases in Content Questions
+94A,1,Order of Adverbial Subordinator and Clause
+95A,4,Relationship between the Order of Object and Verb and the Order of Adposition and Noun Phrase
+96A,4,Relationship between the Order of Object and Verb and the Order of Relative Clause and Noun
+97A,4,Relationship between the Order of Object and Verb and the Order of Adjective and Noun
+101A,1,Expression of Pronominal Subjects
+108A,3,Antipassive Constructions
+108B,4,Productivity of the Antipassive Construction
+109A,8,Applicative Constructions
+109B,5,Other Roles of Applied Objects
+112A,2,Negative Morphemes
+116A,2,Polar Questions
+117A,1,Predicative Possession
+118A,2,Predicative Adjectives
+119A,1,Nominal and Locational Predication
+120A,1,Zero Copula for Predicate Nominals
+121A,4,Comparative Constructions
+122A,4,Relativization on Subjects
+123A,3,Relativization on Obliques
+129A,2,Hand and Arm
+130A,2,Finger and Hand
+143A,1,Order of Negative Morpheme and Verb
+143E,1,Preverbal Negative Morphemes
+143F,4,Postverbal Negative Morphemes
+143G,4,Minor morphological means of signaling negation
+144A,9,"Position of Negative Word With Respect to Subject, Object, and Verb"
+144B,3,Position of negative words relative to beginning and end of clause and with respect to adjacency to verb
+144T,1,The Position of Negative Morphemes in Verb-Initial Languages
+144V,1,Verb-Initial with Preverbal Negative
+144W,6,Verb-Initial with Negative that is Immediately Postverbal or between Subject and Object
+144X,4,Verb-Initial with Clause-Final Negative

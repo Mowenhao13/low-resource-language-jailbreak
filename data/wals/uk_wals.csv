@@ -1,0 +1,57 @@
+Fid,Value,Feature
+26A,2,Prefixing vs. Suffixing in Inflectional Morphology
+30A,3,Number of Genders
+31A,2,Sex-based and Non-sex-based Gender Systems
+32A,3,Systems of Gender Assignment
+33A,2,Coding of Nominal Plurality
+37A,5,Definite Articles
+38A,5,Indefinite Articles
+46A,1,Indefinite Pronouns
+51A,1,Position of Case Affixes
+53A,7,Ordinal Numerals
+54A,5,Distributive Numerals
+57A,4,Position of Pronominal Possessive Affixes
+69A,2,Position of Tense-Aspect Affixes
+70A,1,The Morphological Imperative
+71A,1,The Prohibitive
+72A,4,Imperative-Hortative Systems
+79A,3,Suppletion According to Tense and Aspect
+79B,5,Suppletion in Imperatives and Hortatives
+80A,1,Verbal Number and Suppletion
+81A,2,"Order of Subject, Object and Verb"
+82A,1,Order of Subject and Verb
+83A,2,Order of Object and Verb
+85A,2,Order of Adposition and Noun Phrase
+87A,1,Order of Adjective and Noun
+88A,1,Order of Demonstrative and Noun
+89A,1,Order of Numeral and Noun
+90A,1,Order of Relative Clause and Noun
+90C,1,Postnominal relative clauses
+92A,1,Position of Polar Question Particles
+94A,1,Order of Adverbial Subordinator and Clause
+95A,4,Relationship between the Order of Object and Verb and the Order of Adposition and Noun Phrase
+96A,4,Relationship between the Order of Object and Verb and the Order of Relative Clause and Noun
+97A,3,Relationship between the Order of Object and Verb and the Order of Adjective and Noun
+101A,1,Expression of Pronominal Subjects
+108A,3,Antipassive Constructions
+108B,4,Productivity of the Antipassive Construction
+109A,8,Applicative Constructions
+109B,5,Other Roles of Applied Objects
+112A,2,Negative Morphemes
+113A,1,Symmetric and Asymmetric Standard Negation
+114A,7,Subtypes of Asymmetric Standard Negation
+116A,1,Polar Questions
+129A,1,Hand and Arm
+130A,2,Finger and Hand
+138A,1,Tea
+143A,1,Order of Negative Morpheme and Verb
+143E,1,Preverbal Negative Morphemes
+143F,4,Postverbal Negative Morphemes
+143G,4,Minor morphological means of signaling negation
+144A,2,"Position of Negative Word With Respect to Subject, Object, and Verb"
+144B,3,Position of negative words relative to beginning and end of clause and with respect to adjacency to verb
+144D,2,The Position of Negative Morphemes in SVO Languages
+144H,4,NegSVO Order
+144I,1,SNegVO Order
+144J,7,SVNegO Order
+144K,4,SVONeg Order

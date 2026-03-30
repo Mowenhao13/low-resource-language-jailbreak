@@ -1,0 +1,7 @@
+.venv/
+__pycache__
+.env
+config/
+.tmp_backup/
+.DS_Store
+data/.DS_Store
