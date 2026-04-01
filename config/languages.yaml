@@ -35,22 +35,22 @@ languages:
     morph_type: Fusional
     basic_word_order: VSO
 
-  - code: hmn
-    syntax_distance_weighted: 0.4481  # 加权Gower距离 (0-1)
-    syntax_distance_gower: 0.4545      # 标准Gower距离
-    syntax_common_features: 121        # 与英语共同的特征数
-    syntax_distance_source: "WALS"          # 特征来源
-    name: Hmong
-    name_chinese: 苗语
-    family: Hmong-Mien
-    family_chinese: 苗瑶语系
-    resource_level: LRL
-    iso6393: hmn
-    notes: "苗瑶语系，主要分布在中国西南和东南亚"
-    training_data_estimate: 0.0001  # 估计在训练数据中的占比（比例）
-    morph_type: Isolating
-    basic_word_order: SVO
-
+  # - code: hmn
+  #   syntax_distance_weighted: 0.4481  # 加权Gower距离 (0-1)
+  #   syntax_distance_gower: 0.4545      # 标准Gower距离
+  #   syntax_common_features: 121        # 与英语共同的特征数
+  #   syntax_distance_source: "WALS"          # 特征来源
+  #   name: Hmong
+  #   name_chinese: 苗语
+  #   family: Hmong-Mien
+  #   family_chinese: 苗瑶语系
+  #   resource_level: LRL
+  #   iso6393: hmn
+  #   notes: "苗瑶语系，主要分布在中国西南和东南亚"
+  #   training_data_estimate: 0.0001  # 估计在训练数据中的占比（比例）
+  #   morph_type: Isolating
+  #   basic_word_order: SVO
+  
   - code: gn
     syntax_distance_weighted: 0.6240  # 加权Gower距离 (0-1)
     syntax_distance_gower: 0.6296      # 标准Gower距离

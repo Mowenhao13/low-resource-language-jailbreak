@@ -1,5 +1,11 @@
 # 语言特征标注项目依赖
 
+## 深度学习和翻译模型
+torch>=1.13.0
+transformers>=4.30.0
+sentencepiece>=0.1.99
+accelerate>=0.20.0
+
 ## 核心数据处理
 pandas>=1.5.0
 numpy>=1.24.0

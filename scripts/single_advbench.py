@@ -1,22 +1,24 @@
 from openai import OpenAI
-from translate.translate_llm import LLMTranslator
+from translate.nllb_translator import NLLBTranslator
+from translate.nllb_translator import get_nllb_lang_code
 import yaml
 import json
 from pathlib import Path
 import sys
 
 # Your configuration
-# MODEL_ID = "qwen3-instruct"
-# BASE_URL = "https://aigw.sysu.edu.cn/v1"
-# API_KEY = "sk-PKikgGT1Mi4VJLeO9u0m27Z26UvReC5Gb89W3UENLd1Eg5mx"
-# MAX_TOKENS = 2048
-MODEL_ID = "deepseek-chat"
-BASE_URL = "https://api.deepseek.com/v1"
-API_KEY = "sk-242daaa298a04b29bd4224b21ebbbe71"
-THINKING = True
+MODEL_ID = "qwen3-instruct"
+BASE_URL = "https://aigw.sysu.edu.cn/v1"
+API_KEY = "sk-PKikgGT1Mi4VJLeO9u0m27Z26UvReC5Gb89W3UENLd1Eg5mx"
 MAX_TOKENS = 4096
+THINKING = False
+# MODEL_ID = "deepseek-chat"
+# BASE_URL = "https://api.deepseek.com/v1"
+# API_KEY = "sk-242daaa298a04b29bd4224b21ebbbe71"
+# THINKING = False
+# MAX_TOKENS = 4096
 TIMEOUT = 120  # 2 minutes timeout
-need_translate = False
+need_translate = True
 target_lang_code = 'zu'
 
 print("=" * 80)
@@ -47,9 +49,11 @@ print()
 # Translate prompt if needed
 if need_translate:
     print(f"[3/6] Translating prompt to {target_lang_code}...")
-    translator = LLMTranslator()
+    translator = NLLBTranslator()
     try:
-        translated_prompt = translator.Translate(prompt, 'auto', target_lang_code)
+        source_lang = get_nllb_lang_code('zh_CN')
+        target_lang = get_nllb_lang_code(target_lang_code)
+        translated_prompt = translator.translate(prompt, source_lang, target_lang)
         prompt = translated_prompt
         print(f"Translation done, translated length: {len(prompt)} chars")
         print(f"First 200 chars: {repr(prompt[:200])}")
@@ -127,7 +131,9 @@ if need_translate:
     print(f"Translating output from {target_lang_code} to en...")
     if output and len(output.strip()) > 0:
         try:
-            output = translator.Translate(output, target_lang_code, 'en')
+            target_lang = get_nllb_lang_code('en')
+            source_lang = get_nllb_lang_code(target_lang_code)
+            output = translator.translate(output, source_lang, target_lang)
             print(f"Translation done, translated length: {len(output)} chars")
             print(f"First 200 chars: {repr(output[:200])}")
         except Exception as e:
@@ -231,3 +237,4 @@ else:
     print("No API key configured for evaluation model, skipping evaluation.")
 
 print("\nDone!")
+

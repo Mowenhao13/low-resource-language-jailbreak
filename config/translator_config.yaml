@@ -1,0 +1,6 @@
+# NLLB Translator configuration
+model:
+  model_dir: ~/data/models/nllb-200
+  model_name: facebook/nllb-200-distilled-600M
+  device: cuda
+  use_cache: true
